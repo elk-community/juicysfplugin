@@ -54,6 +54,9 @@ public:
     const String getProgramName(int index);
     void changeProgramName(int index, const String& newName);
 
+    void unloadAndLoadFont(const String &absPath);
+    void loadFont(const String &absPath);
+
 private:
     static const StringArray programChangeParams;
 
@@ -73,9 +76,6 @@ private:
     unique_ptr<fluid_synth_t, decltype(&delete_fluid_synth)> synth;
 
     float currentSampleRate;
-
-    void unloadAndLoadFont(const String &absPath);
-    void loadFont(const String &absPath);
     
     int sfont_id;
     unsigned int channel;

@@ -70,6 +70,12 @@ JuicySFAudioProcessor::~JuicySFAudioProcessor()
 
 void JuicySFAudioProcessor::initialiseSynth() {
     fluidSynthModel.initialise();
+
+    // Elk headless build hack: load the Soundfont specified through an environment variable
+#ifdef JUCE_HEADLESS_PLUGIN_CLIENT
+    auto initSfPath = SystemStats::getEnvironmentVariable	( "JUICY_SOUNDFONT_PATH", "" );
+    fluidSynthModel.unloadAndLoadFont(initSfPath);
+#endif
 }
 
 //==============================================================================

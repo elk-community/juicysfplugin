@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT name="juicysfplugin" projectType="audioplug" buildStandalone="1"
-              jucerVersion="5.4.3" buildAUv3="0" buildVST3="1" pluginIsSynth="1"
+<JUCERPROJECT name="juicysfplugin" projectType="audioplug" buildStandalone="0"
+              jucerVersion="5.4.4" buildAUv3="0" buildVST3="0" pluginIsSynth="1"
               pluginWantsMidiIn="1" pluginEditorRequiresKeys="1" companyName="Birchlabs"
               companyWebsite="https://birchlabs.co.uk" bundleIdentifier="uk.co.birchlabs.juicysfplugin"
               pluginManufacturer="birchlabs" pluginCode="Jspf" pluginManufacturerCode="Blbs"
               pluginName="Juicy SF" pluginDesc="Audio plugin to play soundfonts"
-              id="ptvVfg" pluginFormats="buildAU,buildStandalone,buildVST,buildVST3"
-              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginEditorRequiresKeys"
-              buildVST="1" buildAU="1" buildRTAS="0" buildAAX="0" enableIAA="0"
+              id="ptvVfg" pluginFormats="buildVST" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginEditorRequiresKeys"
+              buildVST="1" buildAU="0" buildRTAS="0" buildAAX="0" enableIAA="0"
               projectLineFeed="&#10;" cppLanguageStandard="17" pluginAUIsSandboxSafe="1">
   <MAINGROUP id="rCqBG3" name="juicysfplugin">
     <GROUP id="{ED7E27E3-B67D-383C-F819-F05289E08A33}" name="Source">
@@ -151,7 +150,7 @@
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
   </MODULES>
-  <JUCEOPTIONS/>
+  <JUCEOPTIONS JUCE_WEB_BROWSER="0"/>
   <LIVE_SETTINGS>
     <OSX/>
     <WINDOWS/>
